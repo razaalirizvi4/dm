@@ -1,0 +1,541 @@
+{
+  "Decision Tree (CART)": {
+    "accuracy": 0.646875,
+    "precision": 0.10727969348659004,
+    "recall": 0.36129032258064514,
+    "f1_score": 0.1654357459379616,
+    "roc_auc": 0.5232592923317334,
+    "confusion_matrix": [
+      [
+        979,
+        466
+      ],
+      [
+        99,
+        56
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9081632653061225,
+        "recall": 0.6775086505190312,
+        "f1-score": 0.7760602457391994,
+        "support": 1445.0
+      },
+      "1": {
+        "precision": 0.10727969348659004,
+        "recall": 0.36129032258064514,
+        "f1-score": 0.1654357459379616,
+        "support": 155.0
+      },
+      "accuracy": 0.646875,
+      "macro avg": {
+        "precision": 0.5077214793963563,
+        "recall": 0.5193994865498381,
+        "f1-score": 0.4707479958385805,
+        "support": 1600.0
+      },
+      "weighted avg": {
+        "precision": 0.8305776692861053,
+        "recall": 0.646875,
+        "f1-score": 0.7169059973209545,
+        "support": 1600.0
+      }
+    },
+    "cv_f1_mean": 0.7784239435430769,
+    "cv_f1_std": 0.007807865516663539,
+    "train_time": 0.1279892921447754,
+    "predict_time": 0.0005786418914794922,
+    "description": "CART algorithm with Gini impurity, max_depth=10, balanced class weights"
+  },
+  "Decision Tree (Entropy/ID3)": {
+    "accuracy": 0.6325,
+    "precision": 0.10707803992740472,
+    "recall": 0.38064516129032255,
+    "f1_score": 0.1671388101983003,
+    "roc_auc": 0.5295702645384529,
+    "confusion_matrix": [
+      [
+        953,
+        492
+      ],
+      [
+        96,
+        59
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9084842707340324,
+        "recall": 0.6595155709342561,
+        "f1-score": 0.764234161988773,
+        "support": 1445.0
+      },
+      "1": {
+        "precision": 0.10707803992740472,
+        "recall": 0.38064516129032255,
+        "f1-score": 0.1671388101983003,
+        "support": 155.0
+      },
+      "accuracy": 0.6325,
+      "macro avg": {
+        "precision": 0.5077811553307185,
+        "recall": 0.5200803661122892,
+        "f1-score": 0.4656864860935367,
+        "support": 1600.0
+      },
+      "weighted avg": {
+        "precision": 0.8308480421246403,
+        "recall": 0.6325,
+        "f1-score": 0.706390549784071,
+        "support": 1600.0
+      }
+    },
+    "cv_f1_mean": 0.7689343073751794,
+    "cv_f1_std": 0.004410086769012852,
+    "train_time": 0.22695279121398926,
+    "predict_time": 0.0005562305450439453,
+    "description": "ID3-style using entropy/information gain, max_depth=10, balanced class weights"
+  },
+  "Naive Bayes (Gaussian)": {
+    "accuracy": 0.623125,
+    "precision": 0.10424028268551237,
+    "recall": 0.38064516129032255,
+    "f1_score": 0.1636615811373093,
+    "roc_auc": 0.5264382185511777,
+    "confusion_matrix": [
+      [
+        938,
+        507
+      ],
+      [
+        96,
+        59
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.90715667311412,
+        "recall": 0.6491349480968858,
+        "f1-score": 0.7567567567567568,
+        "support": 1445.0
+      },
+      "1": {
+        "precision": 0.10424028268551237,
+        "recall": 0.38064516129032255,
+        "f1-score": 0.1636615811373093,
+        "support": 155.0
+      },
+      "accuracy": 0.623125,
+      "macro avg": {
+        "precision": 0.5056984778998161,
+        "recall": 0.5148900546936042,
+        "f1-score": 0.46020916894703306,
+        "support": 1600.0
+      },
+      "weighted avg": {
+        "precision": 0.8293741477913485,
+        "recall": 0.6231249999999999,
+        "f1-score": 0.6993006616186228,
+        "support": 1600.0
+      }
+    },
+    "cv_f1_mean": 0.7528086203595259,
+    "cv_f1_std": 0.00781483519023543,
+    "train_time": 0.004114627838134766,
+    "predict_time": 0.0005767345428466797,
+    "description": "Gaussian Naive Bayes \u2014 assumes feature independence"
+  },
+  "KNN (K=3)": {
+    "accuracy": 0.608125,
+    "precision": 0.09450171821305842,
+    "recall": 0.3548387096774194,
+    "f1_score": 0.14925373134328357,
+    "roc_auc": 0.4951110615023998,
+    "confusion_matrix": [
+      [
+        918,
+        527
+      ],
+      [
+        100,
+        55
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9017681728880157,
+        "recall": 0.6352941176470588,
+        "f1-score": 0.7454323995127893,
+        "support": 1445.0
+      },
+      "1": {
+        "precision": 0.09450171821305842,
+        "recall": 0.3548387096774194,
+        "f1-score": 0.14925373134328357,
+        "support": 155.0
+      },
+      "accuracy": 0.608125,
+      "macro avg": {
+        "precision": 0.49813494555053706,
+        "recall": 0.4950664136622391,
+        "f1-score": 0.4473430654280364,
+        "support": 1600.0
+      },
+      "weighted avg": {
+        "precision": 0.8235642350913792,
+        "recall": 0.608125,
+        "f1-score": 0.6876775910338684,
+        "support": 1600.0
+      }
+    },
+    "cv_f1_mean": 0.8257286197896763,
+    "cv_f1_std": 0.0074874576780653386,
+    "train_time": 0.034822940826416016,
+    "predict_time": 0.4815385341644287,
+    "description": "K-Nearest Neighbors with K=3, distance-weighted"
+  },
+  "KNN (K=5)": {
+    "accuracy": 0.586875,
+    "precision": 0.09584664536741214,
+    "recall": 0.3870967741935484,
+    "f1_score": 0.15364916773367476,
+    "roc_auc": 0.5071213305056368,
+    "confusion_matrix": [
+      [
+        879,
+        566
+      ],
+      [
+        95,
+        60
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9024640657084189,
+        "recall": 0.6083044982698962,
+        "f1-score": 0.7267465894997933,
+        "support": 1445.0
+      },
+      "1": {
+        "precision": 0.09584664536741214,
+        "recall": 0.3870967741935484,
+        "f1-score": 0.15364916773367476,
+        "support": 155.0
+      },
+      "accuracy": 0.586875,
+      "macro avg": {
+        "precision": 0.4991553555379155,
+        "recall": 0.4977006362317223,
+        "f1-score": 0.44019787861673404,
+        "support": 1600.0
+      },
+      "weighted avg": {
+        "precision": 0.8243230031128839,
+        "recall": 0.586875,
+        "f1-score": 0.6712277767662006,
+        "support": 1600.0
+      }
+    },
+    "cv_f1_mean": 0.8151105535721609,
+    "cv_f1_std": 0.005205760675928043,
+    "train_time": 0.030263185501098633,
+    "predict_time": 0.5039360523223877,
+    "description": "K-Nearest Neighbors with K=5, distance-weighted"
+  },
+  "KNN (K=7)": {
+    "accuracy": 0.570625,
+    "precision": 0.10298507462686567,
+    "recall": 0.44516129032258067,
+    "f1_score": 0.16727272727272727,
+    "roc_auc": 0.5109096997432749,
+    "confusion_matrix": [
+      [
+        844,
+        601
+      ],
+      [
+        86,
+        69
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9075268817204301,
+        "recall": 0.5840830449826989,
+        "f1-score": 0.7107368421052631,
+        "support": 1445.0
+      },
+      "1": {
+        "precision": 0.10298507462686567,
+        "recall": 0.44516129032258067,
+        "f1-score": 0.16727272727272727,
+        "support": 155.0
+      },
+      "accuracy": 0.570625,
+      "macro avg": {
+        "precision": 0.5052559781736479,
+        "recall": 0.5146221676526398,
+        "f1-score": 0.4390047846889952,
+        "support": 1600.0
+      },
+      "weighted avg": {
+        "precision": 0.8295868941582409,
+        "recall": 0.5706249999999999,
+        "f1-score": 0.6580887559808611,
+        "support": 1600.0
+      }
+    },
+    "cv_f1_mean": 0.8079247917540855,
+    "cv_f1_std": 0.004561122517188006,
+    "train_time": 0.032379150390625,
+    "predict_time": 0.5167419910430908,
+    "description": "K-Nearest Neighbors with K=7, distance-weighted"
+  },
+  "KNN (K=11)": {
+    "accuracy": 0.54625,
+    "precision": 0.09957924263674614,
+    "recall": 0.45806451612903226,
+    "f1_score": 0.16359447004608296,
+    "roc_auc": 0.5074316329947539,
+    "confusion_matrix": [
+      [
+        803,
+        642
+      ],
+      [
+        84,
+        71
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9052987598647125,
+        "recall": 0.5557093425605536,
+        "f1-score": 0.6886792452830188,
+        "support": 1445.0
+      },
+      "1": {
+        "precision": 0.09957924263674614,
+        "recall": 0.45806451612903226,
+        "f1-score": 0.16359447004608296,
+        "support": 155.0
+      },
+      "accuracy": 0.54625,
+      "macro avg": {
+        "precision": 0.5024390012507294,
+        "recall": 0.506886929344793,
+        "f1-score": 0.4261368576645509,
+        "support": 1600.0
+      },
+      "weighted avg": {
+        "precision": 0.8272446816332534,
+        "recall": 0.54625,
+        "f1-score": 0.6378116576819407,
+        "support": 1600.0
+      }
+    },
+    "cv_f1_mean": 0.7975097161510405,
+    "cv_f1_std": 0.005210570083284614,
+    "train_time": 0.04749417304992676,
+    "predict_time": 0.6941640377044678,
+    "description": "K-Nearest Neighbors with K=11, distance-weighted"
+  },
+  "SVM (Linear)": {
+    "accuracy": 0.643125,
+    "precision": 0.11623616236162361,
+    "recall": 0.4064516129032258,
+    "f1_score": 0.18077474892395984,
+    "roc_auc": 0.5285589909588124,
+    "confusion_matrix": [
+      [
+        966,
+        479
+      ],
+      [
+        92,
+        63
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9130434782608695,
+        "recall": 0.6685121107266436,
+        "f1-score": 0.7718737514982021,
+        "support": 1445.0
+      },
+      "1": {
+        "precision": 0.11623616236162361,
+        "recall": 0.4064516129032258,
+        "f1-score": 0.18077474892395984,
+        "support": 155.0
+      },
+      "accuracy": 0.643125,
+      "macro avg": {
+        "precision": 0.5146398203112466,
+        "recall": 0.5374818618149347,
+        "f1-score": 0.476324250211081,
+        "support": 1600.0
+      },
+      "weighted avg": {
+        "precision": 0.8358527695331301,
+        "recall": 0.643125,
+        "f1-score": 0.7146110356238223,
+        "support": 1600.0
+      }
+    },
+    "cv_f1_mean": 0.6810571950983121,
+    "cv_f1_std": 0.009478712377240916,
+    "train_time": 41.68166637420654,
+    "predict_time": 0.2736544609069824,
+    "description": "Support Vector Machine with linear kernel, balanced class weights"
+  },
+  "SVM (RBF)": {
+    "accuracy": 0.74375,
+    "precision": 0.09779179810725552,
+    "recall": 0.2,
+    "f1_score": 0.13135593220338984,
+    "roc_auc": 0.5040986717267553,
+    "confusion_matrix": [
+      [
+        1159,
+        286
+      ],
+      [
+        124,
+        31
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9033515198752923,
+        "recall": 0.802076124567474,
+        "f1-score": 0.8497067448680352,
+        "support": 1445.0
+      },
+      "1": {
+        "precision": 0.09779179810725552,
+        "recall": 0.2,
+        "f1-score": 0.13135593220338984,
+        "support": 155.0
+      },
+      "accuracy": 0.74375,
+      "macro avg": {
+        "precision": 0.5005716589912739,
+        "recall": 0.501038062283737,
+        "f1-score": 0.4905313385357125,
+        "support": 1600.0
+      },
+      "weighted avg": {
+        "precision": 0.8253129218290137,
+        "recall": 0.74375,
+        "f1-score": 0.7801165098911477,
+        "support": 1600.0
+      }
+    },
+    "cv_f1_mean": 0.8307815932319109,
+    "cv_f1_std": 0.008465537638949184,
+    "train_time": 28.905211687088013,
+    "predict_time": 1.3020150661468506,
+    "description": "Support Vector Machine with RBF (Gaussian) kernel, balanced class weights"
+  },
+  "Random Forest": {
+    "accuracy": 0.77125,
+    "precision": 0.11355311355311355,
+    "recall": 0.2,
+    "f1_score": 0.14485981308411214,
+    "roc_auc": 0.5365777430516799,
+    "confusion_matrix": [
+      [
+        1203,
+        242
+      ],
+      [
+        124,
+        31
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9065561416729465,
+        "recall": 0.8325259515570934,
+        "f1-score": 0.8679653679653679,
+        "support": 1445.0
+      },
+      "1": {
+        "precision": 0.11355311355311355,
+        "recall": 0.2,
+        "f1-score": 0.14485981308411214,
+        "support": 155.0
+      },
+      "accuracy": 0.77125,
+      "macro avg": {
+        "precision": 0.51005462761303,
+        "recall": 0.5162629757785467,
+        "f1-score": 0.5064125905247401,
+        "support": 1600.0
+      },
+      "weighted avg": {
+        "precision": 0.8297339733238377,
+        "recall": 0.77125,
+        "f1-score": 0.7979145173362463,
+        "support": 1600.0
+      }
+    },
+    "cv_f1_mean": 0.8613002027125496,
+    "cv_f1_std": 0.008008188605938571,
+    "train_time": 4.2073140144348145,
+    "predict_time": 0.050457000732421875,
+    "description": "Ensemble of 200 decision trees, max_depth=15, balanced class weights"
+  },
+  "MLP Neural Network": {
+    "accuracy": 0.77625,
+    "precision": 0.10810810810810811,
+    "recall": 0.18064516129032257,
+    "f1_score": 0.13526570048309178,
+    "roc_auc": 0.5196830003348588,
+    "confusion_matrix": [
+      [
+        1214,
+        231
+      ],
+      [
+        127,
+        28
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9052945563012678,
+        "recall": 0.8401384083044983,
+        "f1-score": 0.8715003589375449,
+        "support": 1445.0
+      },
+      "1": {
+        "precision": 0.10810810810810811,
+        "recall": 0.18064516129032257,
+        "f1-score": 0.13526570048309178,
+        "support": 155.0
+      },
+      "accuracy": 0.77625,
+      "macro avg": {
+        "precision": 0.5067013322046879,
+        "recall": 0.5103917847974104,
+        "f1-score": 0.5033830297103183,
+        "support": 1600.0
+      },
+      "weighted avg": {
+        "precision": 0.8280671191325554,
+        "recall": 0.77625,
+        "f1-score": 0.8001776263997697,
+        "support": 1600.0
+      }
+    },
+    "cv_f1_mean": 0.8512938950143372,
+    "cv_f1_std": 0.013393895468064432,
+    "train_time": 9.375913858413696,
+    "predict_time": 0.003987550735473633,
+    "description": "Multi-Layer Perceptron with layers (128, 64, 32), ReLU activation"
+  }
+}

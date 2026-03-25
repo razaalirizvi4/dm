@@ -1,0 +1,76 @@
+Shape: (8000, 16)
+Columns: ['device_id', 'device_type', 'firmware_version', 'connection_type', 'packet_count', 'avg_packet_size', 'bandwidth_usage_mb', 'failed_connection_attempts', 'unusual_port_access', 'protocol_type', 'login_attempts', 'encryption_used', 'anomaly_score', 'geo_location', 'traffic_spike_ratio', 'intrusion_label']
+
+Dtypes:
+device_id                      object
+device_type                    object
+firmware_version               object
+connection_type                object
+packet_count                    int64
+avg_packet_size                 int64
+bandwidth_usage_mb            float64
+failed_connection_attempts      int64
+unusual_port_access             int64
+protocol_type                  object
+login_attempts                  int64
+encryption_used                 int64
+anomaly_score                 float64
+geo_location                   object
+traffic_spike_ratio           float64
+intrusion_label                 int64
+
+device_id: 8000 unique, dtype=object
+device_type: 4 unique, dtype=object, values=['Smart Plug', 'Router', 'Sensor', 'Camera']
+firmware_version: 5 unique, dtype=object, values=['v1.1', 'v3.0', 'v2.0', 'v2.1', 'v1.0']
+connection_type: 3 unique, dtype=object, values=['5G', 'Ethernet', 'WiFi']
+packet_count: 7358 unique, dtype=int64
+avg_packet_size: 1432 unique, dtype=int64
+bandwidth_usage_mb: 7940 unique, dtype=float64
+failed_connection_attempts: 20 unique, dtype=int64, values=[4, 6, 11, 19, 8, 3, 7, 18, 0, 10, 12, 17, 9, 1, 2, 16, 15, 14, 13, 5]
+unusual_port_access: 2 unique, dtype=int64, values=[0, 1]
+protocol_type: 4 unique, dtype=object, values=['TCP', 'MQTT', 'HTTP', 'UDP']
+login_attempts: 30 unique, dtype=int64
+encryption_used: 2 unique, dtype=int64, values=[1, 0]
+anomaly_score: 1000 unique, dtype=float64
+geo_location: 5 unique, dtype=object, values=['Europe', 'Asia', 'North America', 'South America', 'Africa']
+traffic_spike_ratio: 501 unique, dtype=float64
+intrusion_label: 2 unique, dtype=int64, values=[0, 1]
+
+Missing values total: 0
+
+Missing per column:
+device_id                     0
+device_type                   0
+firmware_version              0
+connection_type               0
+packet_count                  0
+avg_packet_size               0
+bandwidth_usage_mb            0
+failed_connection_attempts    0
+unusual_port_access           0
+protocol_type                 0
+login_attempts                0
+encryption_used               0
+anomaly_score                 0
+geo_location                  0
+traffic_spike_ratio           0
+intrusion_label               0
+
+Head:
+  device_id device_type firmware_version connection_type  packet_count  avg_packet_size  bandwidth_usage_mb  failed_connection_attempts  unusual_port_access protocol_type  login_attempts  encryption_used  anomaly_score   geo_location  traffic_spike_ratio  intrusion_label
+0        D1  Smart Plug             v1.1              5G         22904              941             3572.07                           4                    0           TCP              12                1          0.439         Europe                 0.90                0
+1        D2      Router             v3.0        Ethernet         36382              887              275.60                           6                    0          MQTT              13                1          0.278           Asia                 1.86                0
+2        D3      Sensor             v3.0            WiFi         10971              577             3803.74                          11                    0           TCP               7                0          0.618  North America                 0.42                0
+3        D4  Smart Plug             v2.0              5G         13636              925             2886.37                          19                    0          MQTT              13                1          0.738         Europe                 0.73                1
+4        D5  Smart Plug             v2.1        Ethernet         23197              485             4167.80                          11                    1          HTTP              12                1          0.463           Asia                 0.73                0
+
+Describe:
+       packet_count  avg_packet_size  bandwidth_usage_mb  failed_connection_attempts  unusual_port_access  login_attempts  encryption_used  anomaly_score  traffic_spike_ratio  intrusion_label
+count   8000.000000      8000.000000          8000.00000                 8000.000000          8000.000000     8000.000000      8000.000000    8000.000000          8000.000000      8000.000000
+mean   24796.749875       782.251750          2480.63071                    9.464500             0.151000       14.539375         0.804750       0.497544             2.516826         0.096875
+std    14325.884479       411.090812          1434.05102                    5.767118             0.358071        8.640068         0.396418       0.290961             1.457443         0.295806
+min      108.000000        64.000000            10.03000                    0.000000             0.000000        0.000000         0.000000       0.000000             0.000000         0.000000
+25%    12467.750000       428.000000          1228.80250                    4.000000             0.000000        7.000000         1.000000       0.245000             1.240000         0.000000
+50%    24380.000000       783.000000          2489.41000                    9.000000             0.000000       15.000000         1.000000       0.495000             2.535000         0.000000
+75%    37022.000000      1135.000000          3701.74750                   14.000000             0.000000       22.000000         1.000000       0.755000             3.810000         0.000000
+max    49993.000000      1499.000000          4998.95000                   19.000000             1.000000       29.000000         1.000000       1.000000             5.000000         1.000000
